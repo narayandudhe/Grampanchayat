@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "470088711438",
+    "firebase_url": "https://grampanchyat-cbc0b.firebaseio.com",
+    "project_id": "grampanchyat-cbc0b",
+    "storage_bucket": "grampanchyat-cbc0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470088711438:android:2e1e306ed0979fc1",
+        "android_client_info": {
+          "package_name": "com.example.grampanchyat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470088711438-3l18k52s9ortidotdq6l1ibvv7oeafm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDbu2tnEkSBWXsghyTmq4UmYP7AL98EI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
