@@ -94,7 +94,7 @@
             android:layout_height="64dp"
             android:gravity="center"
             android:letterSpacing="0.1"
-            android:text="संपर्क करा"
+            android:text="forgot Password"
             android:textColor="#000000" />
     </LinearLayout>
     <LinearLayout

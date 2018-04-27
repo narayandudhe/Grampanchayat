@@ -32,11 +32,11 @@
     <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btn_rateUs" android:background="@color/colorPrimaryDark" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/str_rateUs" android:drawableLeft="@drawable/ic_thumbs_up" android:drawableRight="@drawable/ic_stars_new" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/submitfeedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/submitfeedback"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_marginBottom="144dp"
         android:text="submit" />
 </RelativeLayout>

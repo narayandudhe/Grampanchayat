@@ -56,7 +56,7 @@
                     android:layout_weight="0.33">
 
                     <Button
-                        android:id="@+id/delete"
+                        android:id="@+id/userdel"
                         android:layout_width="80in"
                         android:layout_height="80pt"
                         android:layout_alignParentEnd="true"
@@ -80,7 +80,7 @@
                     android:layout_weight="0.33">
 
                     <Button
-                        android:id="@+id/notification"
+                        android:id="@+id/empgramp"
                         android:layout_width="80in"
                         android:layout_height="80pt"
                         android:background="@drawable/ic_dash_gov1"
@@ -107,7 +107,7 @@
                     android:layout_weight="0.33">
 
                     <Button
-                        android:id="@+id/temperature"
+                        android:id="@+id/ration"
                         android:layout_width="80in"
                         android:layout_height="80pt"
                         android:layout_alignParentEnd="true"
@@ -129,7 +129,7 @@
                     android:layout_weight="0.33">
 
                     <Button
-                        android:id="@+id/certi"
+                        android:id="@+id/certificate"
                         android:layout_width="80in"
                         android:layout_height="80pt"
                         android:background="@drawable/ic_dash_certificate1"
@@ -148,7 +148,7 @@
                     android:layout_weight="0.33">
 
                     <Button
-                        android:id="@+id/currency"
+                        android:id="@+id/taxpay"
                         android:layout_width="80in"
                         android:layout_height="80pt"
                         android:background="@drawable/ic_dash_mahasul1"
@@ -232,74 +232,6 @@
                 </RelativeLayout>
             </TableRow>
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.5"
-                android:weightSum="1">
-
-                <RelativeLayout
-                    android:layout_width="15dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.33">
-
-                    <Button
-                        android:id="@+id/storage"
-                        android:layout_width="80in"
-                        android:layout_height="80pt"
-                        android:background="@drawable/ic_dash_gallery"
-                        android:gravity="center|bottom"
-                        android:onClick="onClick"
-                        android:paddingBottom="10dp"
-                        android:text=" नवीन फोटो जोडा"
-                        android:textAlignment="gravity"
-                        android:textSize="20dp" />
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.33">
-
-                    <Button
-                        android:id="@+id/video_gallery"
-                        android:layout_width="80in"
-                        android:layout_height="80pt"
-                        android:background="@drawable/ic_dash_video"
-                        android:gravity="center|bottom"
-                        android:onClick="onClick"
-                        android:paddingBottom="10dp"
-                        android:text="नवीन व्हिडिओ जोडा"
-                        android:textAlignment="gravity"
-                        android:textSize="20dp" />
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.33">
-
-
-
-                    <Button
-                        android:id="@+id/payment"
-                        android:layout_width="80in"
-                        android:layout_height="80pt"
-                        android:background="@drawable/ic_dash_epayment1"
-                        android:gravity="center|bottom"
-                        android:onClick="onClick"
-                        android:paddingBottom="10dp"
-                        android:text="ई- पेमेंट"
-                        android:textAlignment="gravity"
-                        android:textSize="20dp" />
-
-
-                </RelativeLayout>
-            </TableRow>
 
 
         </TableLayout>

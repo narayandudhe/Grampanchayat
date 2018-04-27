@@ -23,7 +23,7 @@ public class generalnews extends Activity {
 
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("http://www.lokmat.com/topics/RSS");
+        mWebView.loadUrl("http://www.lokmat.com");
 
     }
 }

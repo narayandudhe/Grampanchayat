@@ -166,5 +166,9 @@
     <string name="t_already">क्षमा करा, आपण आधीच बाजार भाव भरले आहेत..</string>
     <string name="t_max1">कमाल</string>
     <string name="title_activity_test">testActivity</string>
-    <string name="title_activity_user_home_activity">User_home_activity</string>
+    <string name="title_activity_user_home_activity">Home</string>
+    <string name="title_activity_user_home">Home</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 </resources>

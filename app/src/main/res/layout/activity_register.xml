@@ -48,6 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:capitalize="words"
                 android:hint="Name"
                 android:inputType="textPersonName" />
 
@@ -56,6 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:capitalize="words"
                 android:hint="Middle"
                 android:inputType="textPersonName" />
 
@@ -64,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:capitalize="words"
                 android:hint="Last Name"
                 android:inputType="textPersonName" />
 
@@ -73,6 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:autoLink="email"
                 android:hint="Email"
                 android:inputType="textEmailAddress" />
 
@@ -81,8 +85,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:autoLink="phone"
                 android:hint="Mobile NO"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:maxLength="10"
+                android:minEms="10"
+                android:phoneNumber="true" />
 
             <EditText
                 android:id="@+id/password"
@@ -90,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:hint="password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword|textWebPassword|numberPassword" />
 
             <EditText
                 android:id="@+id/hno"

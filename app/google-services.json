@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "470088711438-ct98dhiqhok1n6110k4g9tkmqckch2rd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grampanchyat",
+            "certificate_hash": "34876cde211c05977d0eee8ba7cff4604fbb5cae"
+          }
+        },
+        {
           "client_id": "470088711438-htkh8duhv3tbdpcj5hapb0f73d4hgb28.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

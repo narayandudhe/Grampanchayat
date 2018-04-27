@@ -33,7 +33,8 @@
             android:layout_marginTop="56dp"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="@color/darkgray"/>
+            android:textColor="@color/darkgray"
+            android:text="The Grampanchyat is established 01/06/1965. The grampanchyat is Group of two village i.e sultanwadi and bhoygaon. the popultaion of village is above 400-450"/>
     </RelativeLayout>
 </ScrollView>
 

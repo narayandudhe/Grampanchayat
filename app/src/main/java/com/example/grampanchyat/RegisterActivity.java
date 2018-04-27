@@ -49,8 +49,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         textView=(TextView)findViewById(R.id.imagetxt);
-        SharedPreferences pre= getSharedPreferences("pre",MODE_PRIVATE);
-        boolean firststart=pre.getBoolean("firststart",true);
+
 
         // inilazing firbase object
        mAuth= FirebaseAuth.getInstance();
@@ -92,29 +91,19 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         String Hno=hno.getText().toString().trim();
         String Dob=dob.getText().toString().trim();
 
-    if (!TextUtils.isEmpty(First))
+    if (!TextUtils.isEmpty(First) || !TextUtils.isEmpty(Middle) || !TextUtils.isEmpty(Last) || !TextUtils.isEmpty(Email) || !TextUtils.isEmpty(Mobile) || !TextUtils.isEmpty(Password) || !TextUtils.isEmpty(Hno) || !TextUtils.isEmpty(Dob))
     {
 
         user user1=new user(First,Middle,Last,Email,Mobile,Password,Hno,Dob);
         FirebaseUser user=mAuth.getCurrentUser();
 
         databaseReference.child(user.getUid()).setValue(user1);
-        Toast.makeText(this,"information saved",Toast.LENGTH_LONG).show()
+        Toast.makeText(this,"information saved",Toast.LENGTH_LONG).show();
+        startActivity(new Intent(RegisterActivity.this, UserHomeActivity.class));
 
-
-
-                        ;
-        finish();
-        startActivity(new Intent(RegisterActivity.this, User_home_activity.class));
-
-        SharedPreferences pre=getSharedPreferences("pre",MODE_PRIVATE);
-        SharedPreferences.Editor editor=pre.edit();
-        editor.putBoolean("firststart",false);
-        editor.apply();
-finish();
 
     }
-    else {Toast.makeText(this,"enter name",Toast.LENGTH_SHORT).show();
+    else {Toast.makeText(this,"Please Enter All Fields",Toast.LENGTH_SHORT).show();
     }
        /* if (!TextUtils.isEmpty(Middle)
         {}

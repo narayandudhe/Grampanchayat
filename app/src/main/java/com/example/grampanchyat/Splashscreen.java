@@ -49,7 +49,7 @@ public class Splashscreen extends Activity {
                         waited += 5000;
                     }
                     Intent intent = new Intent(Splashscreen.this,
-                            LoginActivity.class);
+                            MainupActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                     Splashscreen.this.finish();
@@ -62,7 +62,7 @@ public class Splashscreen extends Activity {
             }
         };
         Intent intent = new Intent(Splashscreen.this,
-                LoginActivity.class);
+               LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
 

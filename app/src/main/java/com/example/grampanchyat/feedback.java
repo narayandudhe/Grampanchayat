@@ -16,15 +16,16 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class feedback extends AppCompatActivity {
        private EditText txtFeedback;
-       private Button submitfeeback;
+
     DatabaseReference databaseReference;
     FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
+         Button submitfeebac;
         txtFeedback=(EditText)findViewById(R.id.txtFeedback);
-        submitfeeback=(Button)findViewById(R.id.submitfeedback);
+        submitfeebac=(Button)findViewById(R.id.submitfeedback);
 
 
         // inilazing firbase object
@@ -37,7 +38,7 @@ public class feedback extends AppCompatActivity {
         }
         databaseReference= FirebaseDatabase.getInstance().getReference("feedback");
         FirebaseUser user=mAuth.getCurrentUser();
-        submitfeeback.setOnClickListener(new View.OnClickListener() {
+        submitfeebac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 addfeed();
@@ -54,7 +55,7 @@ public class feedback extends AppCompatActivity {
 
             databaseReference.child(user.getUid()).setValue(feed);
             Toast.makeText(this,"submitted sucess",Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(feedback.this, User_home_activity.class));
+            startActivity(new Intent(feedback.this, UserHomeActivity.class));
         }
         else
             Toast.makeText(this,"enter feedback",Toast.LENGTH_SHORT).show();
